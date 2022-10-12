@@ -6,7 +6,7 @@ Parse and process nested data pulled from an API
 
 ### Estimated Time to Complete
 
-40 minutes
+60 minutes
 
 ---
 
