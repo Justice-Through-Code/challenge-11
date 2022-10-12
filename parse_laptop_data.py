@@ -60,7 +60,7 @@ laptops = [
                     "price": [1199, 1299, 1399, 1749, 1999, 2299]
                 }
             ],
-            "description": "The Dell XPS is an absolutely brilliant laptop. The 2020  version rocks an 11th-generation Intel Core i3, i5 or i7 processor and a bezel-less ‘Infinity Edge’ display. This Dell XPS continues to be the most popular Windows laptop in the world. What’s more, there’s a wide range of customization options, so you can really make the Dell XPS the best laptop for your needs. "
+            "description": "The Dell XPS is an absolutely brilliant laptop. The 2020  version rocks an 11th-generation Intel Core i3, i5 or i7 processor and a bezel-less 'Infinity Edge' display. This Dell XPS continues to be the most popular Windows laptop in the world. What's more, there's a wide range of customization options, so you can really make the Dell XPS the best laptop for your needs. "
         }
 ]
 
@@ -68,32 +68,33 @@ laptops = [
 # 1.1 TODO: Print out the MacBook Pro url
 
 
-# 1.2 TODO: Write a function called `print_laptop_data` that takes in three parameters: `laptop`, `size`, and `topic`, and returns nothing.
+# 1.2 TODO: Write a function called `print_laptop_data` that takes in two parameters: `laptop` and `topic`, and returns nothing.
 #
 #   If `laptop` is 'Apple Macbook Pro', the function should print out data about that computer.
 #   If `laptop` is 'Dell XPS', the function should print out data about that computer.
 #
-#   Similarly, whichever `size` is sent to the function ('13-inch' or '16-inch' for the Mac, '13-inch' or '15-inch' for the Dell)
-#   should be the computer that the function prints out data about.
+#   NOTE: There are multiple types of each computer. Assume the user wants to know about the ones with
+#       the smaller (and therefore cheaper) screen size.
 #
+#   The `topic` can be anything about the type of computer (price, screen size, cpu, etc). For example:
 #   If `topic` is 'prices', the function should print out all possible prices of the specified computer.
-#   If `topic` is 'description', the function should print out the description of the specified computer.
+#   If `topic` is 'colors', the function should print out all possible colors of the specified computer.
 #   etc etc etc for each computer topic. (NOTE: you do NOT need an if- or elif- statement for each option.)
 #
 #   The data should print out like so:
-#   <computer-name> (<computer-size>) <topic>: <data>
+#   <computer-name> <topic>: <data>
 #
 #   So, for instance:
-#   Dell XPS (15-inch) ram: ["8GB", "16GB", "32GB", "64GB"]
+#   Dell XPS ram: ["8GB", "16GB", "32GB", "64GB"]
 
 
 # 1.3 TODO: Call your function 3 times to print out:
-#   1.3.1: All possible prices of the 16-inch MacBook Pro.
-#   1.3.2: All the color options for the 13-inch Dell XPS.
-#   1.3.3: The description of Dell XPS laptop.
+#   1.3.1: All possible prices of the Apple Macbook Pro.
+#   1.3.2: All the color options for the Dell XPS.
+#   1.3.3: The screen_size of the Dell XPS.
 
 
-# 2.1 TODO: Write a function called `list_prices` that takes no parameters and returns nothing.
+# 2.1 TODO: Write a function called `list_prices` that takes one parameter: a list of computers, and returns nothing.
 #   Using nested loops, the function should print out all possible computer prices, one price on each line.
 #   No need to specify which computer each price belongs to.
 
@@ -101,12 +102,7 @@ laptops = [
 # 2.2 TODO: Call your function to see that it works.
 
 
-
-print("Question 2: Out of Stock laptops")
-print("Suppose that the 13-inch MacBook Pro in space gray color is sold out. 
-'Also, the same laptop with 1 TB storage is out of stock as well. Update the list of dictionaries such that these options are removed. Print the updated dictionary.")
-
-# 3.0 Suppose that the two versions of the 13-inch MacBook Pro are no longer available:
+# 3.0 Suppose that the two versions of the 16-inch MacBook Pro are no longer available:
 #   - In the color 'space gray'
 #   - With '1 TB SSD' storage
 
@@ -116,6 +112,6 @@ print("Suppose that the 13-inch MacBook Pro in space gray color is sold out.
 # 3.2 TODO: Print out the Macbook Pro dictionary to see the changes.
 
 
-
 # BONUS TODO: Write a function called `get_price_range` that returns the minimum and maximum prices out of all the options.
 
+# ^ Expected outcome: (999, 2799)
